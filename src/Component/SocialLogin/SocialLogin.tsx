@@ -21,7 +21,8 @@ const SocialLogin = () => {
         });
         navigate(location.state ? location.state : "/");
       })
-      .catch(() => {
+      .catch((error) => {
+        console.log(error);
         Swal.fire({
           icon: "error",
           title: "Something went wrong, Try again later.",

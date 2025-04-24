@@ -13,7 +13,7 @@ export default function Donate() {
   console.log({ organization });
   useEffect(() => {
     axios
-      .get("https://bloodbond-server.vercel.app//getallcampaigns")
+      .get("https://bloodbond-server.vercel.app/getallcampaigns")
       .then((res) => {
         setCampaigns(res.data.campaigns);
 

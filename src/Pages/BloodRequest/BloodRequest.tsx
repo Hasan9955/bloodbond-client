@@ -43,7 +43,7 @@ const BloodRequest = () => {
     };
 
     axios
-      .post("https://bloodbond-server.vercel.app//createbloodrequest", request, {
+      .post("https://bloodbond-server.vercel.app/createbloodrequest", request, {
         headers: {
           'Content-Type': 'application/json'
         }

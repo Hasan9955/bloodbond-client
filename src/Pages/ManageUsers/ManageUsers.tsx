@@ -44,7 +44,7 @@ const ManageUsers: React.FC = () => {
             confirmButtonText: "Yes, delete it!"
         }).then((result) => {
             if (result.isConfirmed) {
-                axiosPublic.delete(`https://bloodbond-server.vercel.app//userdelete/${id}`)
+                axiosPublic.delete(`https://bloodbond-server.vercel.app/userdelete/${id}`)
                     .then(res => {
                         console.log(res.data);
                         if (res.data.message) {

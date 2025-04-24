@@ -19,7 +19,7 @@ const RequestBlood: React.FC = () => {
 
   useEffect(() => {
     axios
-      .get("https://bloodbond-server.vercel.app//getbloodrequests")
+      .get("https://bloodbond-server.vercel.app/getbloodrequests")
       .then((response) => {
         const currentDate = new Date();
         const filteredRequests = response.data.bloodRequests

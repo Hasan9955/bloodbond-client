@@ -15,7 +15,7 @@
 //     // const { isLoading } = useQuery({
 //     //     queryKey: ['getUsers'],
 //     //     queryFn: async () => {
-//     //         const res = await axios.post('https://bloodbond-server.vercel.app//getuser', user?.email);
+//     //         const res = await axios.post('https://bloodbond-server.vercel.app/getuser', user?.email);
 //     //         console.log(res.data.donor)
 //     //         if (res.data.donor) {
 //     //             setIsDonor(true)

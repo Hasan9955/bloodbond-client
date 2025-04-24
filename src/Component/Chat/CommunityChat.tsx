@@ -31,7 +31,7 @@ const CommunityChat = () => {
     if (chat) {
       console.log(data);
       axios
-        .post("https://bloodbond-server.vercel.app//createCommunityChat", data)
+        .post("https://bloodbond-server.vercel.app/createCommunityChat", data)
         .then((res) => {
           console.log(res);
           refetch();
