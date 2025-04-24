@@ -188,7 +188,7 @@ const router = createBrowserRouter([
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
-  <div className="font-serif">
+  <div className="bg-white">
     <React.StrictMode>
       <AuthProvider>
         <QueryClientProvider client={queryClient}>
