@@ -51,6 +51,33 @@ const Login: React.FC = () => {
     }
   };
 
+  const handleAdminLogin = () => {
+    const email = "admin@gmail.com";
+    const password = "Admin@123";
+  
+    if (auth) {
+      const { userLogin } = auth;
+  
+      userLogin(email, password)
+        .then(() => {
+          Swal.fire({
+            title: "Logged in as Admin",
+            icon: "success",
+          });
+  
+          navigate("/dashboard/home"); 
+        })
+        .catch((error: FirebaseError) => {
+          console.log(error);
+          Swal.fire({
+            title: "Admin login failed",
+            icon: "error",
+          });
+        });
+    }
+  };
+  
+
   return (
     <div className="container mx-auto">
       {/* overlay div */}
@@ -118,6 +145,24 @@ const Login: React.FC = () => {
                   Login
                 </button>
               </div>
+              <div className="form-control mt-3">
+              <div className="form-control mt-6">
+  <div className="text-center border-2 border-dashed border-[#ea062c] rounded-lg p-4 hover:shadow-lg transition duration-300 ease-in-out">
+    <p className="text-sm font-medium text-gray-600 mb-2">
+      🔐 For testing purpose
+    </p>
+    <button
+      type="button"
+      className="btn btn-outline border-[#ea062c] hover:bg-[#ea062c] hover:text-white text-[#ea062c] font-bold px-6 py-2 rounded-full transition-all duration-300"
+      onClick={handleAdminLogin}
+    >
+      🚀 Login as Admin
+    </button>
+  </div>
+</div>
+
+</div>
+
               <SocialLogin></SocialLogin>
             </Form>
           </Formik>

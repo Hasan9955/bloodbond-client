@@ -234,7 +234,7 @@ const Navbar = () => {
                   </label>
                   <ul
                     tabIndex={0}
-                    className="dropdown-content z-[10] menu px-5  shadow bg-white text-black rounded-box py-5"
+                    className="dropdown-content z-[10] menu px-5  shadow bg-white text-black rounded-box py-5 w-64"
                   >
                     <div className="flex flex-col justify-center items-center mb-4">
                       <label tabIndex={0} className="btn btn-circle avatar">
