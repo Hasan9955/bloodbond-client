@@ -83,7 +83,7 @@ const DonorRegistration = () => {
             lastDonationDate,
         }
         console.log(donorInfo)
-        axios.post('http://localhost:5000/donorcreate', donorInfo)
+        axios.post('https://bloodbond-server.vercel.app//donorcreate', donorInfo)
             .then((res) => {
                 console.log(res)
                 if (res.status === 201) {

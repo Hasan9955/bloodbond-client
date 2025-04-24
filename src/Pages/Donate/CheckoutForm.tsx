@@ -47,7 +47,7 @@ const CheckoutForm = ({ campaignId }: { campaignId: string }) => {
       // console.log(token, inputAmount);
 
       axios
-        .post("http://localhost:5000/stripe", {
+        .post("https://bloodbond-server.vercel.app//stripe", {
           token: token.id,
           amount: inputAmount,
           campaignId: campaignId || "65bcd81af947cd787d3ce15a",

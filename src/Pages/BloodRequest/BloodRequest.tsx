@@ -43,12 +43,12 @@ const BloodRequest = () => {
     };
 
     axios
-      .post("http://localhost:5000/createbloodrequest", request, {
+      .post("https://bloodbond-server.vercel.app//createbloodrequest", request, {
         headers: {
           'Content-Type': 'application/json'
         }
       })
-      .then(() =>{
+      .then(() => {
         try {
           Swal.fire({
             title: "Your Blood Request Created Successfully",
@@ -59,10 +59,10 @@ const BloodRequest = () => {
           console.log(error.message);
         }
       }
-        
+
       );
 
-   
+
   };
 
   return (

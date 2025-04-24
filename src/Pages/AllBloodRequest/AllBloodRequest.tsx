@@ -17,16 +17,16 @@ const RequestBlood: React.FC = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/getbloodrequests")
+      .get("https://bloodbond-server.vercel.app//getbloodrequests")
       .then((response) => {
         const currentDate = new Date();
-        const filteredRequests: BloodRequest[] = response.data.bloodRequests 
-        .flat()
-        .filter(
-          (request: BloodRequest) => new Date(request.time) > currentDate
-          ) 
-          const filterBloodBag = filteredRequests.filter(data => parseInt(data.bloodBag) > 0) 
-          setRequests(filterBloodBag);
+        const filteredRequests: BloodRequest[] = response.data.bloodRequests
+          .flat()
+          .filter(
+            (request: BloodRequest) => new Date(request.time) > currentDate
+          )
+        const filterBloodBag = filteredRequests.filter(data => parseInt(data.bloodBag) > 0)
+        setRequests(filterBloodBag);
       })
       .catch((error) => {
         console.error("Error fetching blood requests:", error);
@@ -41,7 +41,7 @@ const RequestBlood: React.FC = () => {
         </p>
         <div className="grid md:grid-cols-2 gap-5 md:px-5 lg:px-10">
           {requests.map((bloodGroupRequests, index) =>
-          <DonateBlood data={bloodGroupRequests} key={index}></DonateBlood>
+            <DonateBlood data={bloodGroupRequests} key={index}></DonateBlood>
 
           )}
         </div>

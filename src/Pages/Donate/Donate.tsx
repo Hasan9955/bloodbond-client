@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+/* eslint-disable @typescript-eslint/ban-ts-comment */
 import { useEffect, useState } from "react";
 import Card from "./Card";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
@@ -7,11 +9,11 @@ export default function Donate() {
   const [campaigns, setCampaigns] = useState([]);
   const [organization, setOrganization] = useState([]);
 
-  console.log({campaigns});
-  console.log({organization});
+  console.log({ campaigns });
+  console.log({ organization });
   useEffect(() => {
     axios
-      .get("http://localhost:5000/getallcampaigns")
+      .get("https://bloodbond-server.vercel.app//getallcampaigns")
       .then((res) => {
         setCampaigns(res.data.campaigns);
 
@@ -49,7 +51,7 @@ export default function Donate() {
           <TabPanel className={"mt-4"}>
             <div className="flex justify-center gap-6 flex-wrap">
               {campaigns.map((campaign, index) => {
-                // @ts-ignore
+                // @ts-expect-error 
                 if (campaign._id !== "68099def19d93a8b694d4d6e") {
                   return <Card key={index} campaign={campaign} />;
                 }
