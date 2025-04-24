@@ -13,6 +13,7 @@ import Swal from "sweetalert2";
 import { useQuery } from "@tanstack/react-query";
 import useAxiosPublic from "../../../hooks/useAxiosPublic";
 import { TfiWrite } from "react-icons/tfi";
+import logo from "../../../assets/logo.png";
 
 const Dashboard: React.FC = () => {
     const [open, setOpen] = useState(true)
@@ -30,7 +31,7 @@ const Dashboard: React.FC = () => {
 
     const User = data?.user
 
-    console.log(User);
+    // console.log(User);
 
     if (!auth) {
         return;
@@ -75,14 +76,14 @@ const Dashboard: React.FC = () => {
                         <FaArrowLeft onClick={() => setOpen(!open)} className={`bg-white cursor-pointer text-black text-2xl rounded-full border border-black p-1 absolute top-12 -right-3 ${!open && "rotate-180"}`} />
                         <Link to="/">
                             <div className="flex items-center">
-                                <img className="w-20" src="https://i.ibb.co/RpwQSwM/Blood-Bondbb.png" alt="" />
+                                <img className="w-10" src={logo} alt="" />
                                 <h2 className={`text-xl font-bold text-white ${!open && "scale-0"} duration-500 `}>BloodBond</h2>
                             </div>
                         </Link>
                     </div>
                     <div className="pl-3">
                         {
-                            User?.roll === "Admin" ? <ul className="space-y-1">
+                            User?.roll === "admin" ? <ul className="space-y-1">
                                 <li className="font-medium hover:bg-red-600 hover:text-white rounded-lg">
                                     <NavLink
                                         to="/dashboard/home"

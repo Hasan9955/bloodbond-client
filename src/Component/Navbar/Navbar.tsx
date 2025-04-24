@@ -4,7 +4,7 @@ import Swal from "sweetalert2";
 // import logo from "../../assets/icon.png";
 import { LuLogOut } from "react-icons/lu";
 import Container from "../Container/Container";
-
+import logo from "../../assets/logo.png";
 const Navbar = () => {
   const auth = useAuth();
   const navigate = useNavigate();
@@ -54,7 +54,7 @@ const Navbar = () => {
               ? "pending"
               : isActive
               ? "p-5 block secondary_bg text-white duration-300"
-              : "p-5 block primary_color hover:bg-[#ea062b] hover:text-white duration-300"
+              : "p-5 block primary_color hover:bg-[#e9556d] hover:text-white duration-300"
           }
         >
           {" "}
@@ -69,7 +69,7 @@ const Navbar = () => {
               ? "pending"
               : isActive
               ? "p-5 block secondary_bg text-white duration-300"
-              : "p-5 block primary_color hover:bg-[#ea062b] hover:text-white duration-300"
+              : "p-5 block primary_color hover:bg-[#e9556d] hover:text-white duration-300"
           }
         >
           Blogs
@@ -83,7 +83,7 @@ const Navbar = () => {
               ? "pending"
               : isActive
               ? "p-5 block secondary_bg text-white duration-300"
-              : "p-5 block primary_color hover:bg-[#ea062b] hover:text-white duration-300"
+              : "p-5 block primary_color hover:bg-[#e9556d] hover:text-white duration-300"
           }
         >
           Bio-Medical
@@ -98,7 +98,7 @@ const Navbar = () => {
               ? "pending"
               : isActive
               ? "p-5 block secondary_bg text-white duration-300"
-              : "p-5 block primary_color hover:bg-[#ea062b] hover:text-white duration-300"
+              : "p-5 block primary_color hover:bg-[#e9556d] hover:text-white duration-300"
           }
         >
           Campaign
@@ -112,7 +112,7 @@ const Navbar = () => {
               ? "pending"
               : isActive
               ? "p-5 block secondary_bg text-white duration-300"
-              : "p-5 block primary_color hover:bg-[#ea062b] hover:text-white duration-300"
+              : "p-5 block primary_color hover:bg-[#e9556d] hover:text-white duration-300"
           }
         >
           Request Blood
@@ -126,7 +126,7 @@ const Navbar = () => {
               ? "pending"
               : isActive
               ? "p-5 block secondary_bg text-white duration-300"
-              : "p-5 block primary_color hover:bg-[#ea062b] hover:text-white duration-300"
+              : "p-5 block primary_color hover:bg-[#e9556d] hover:text-white duration-300"
           }
         >
           Donate Us
@@ -140,7 +140,7 @@ const Navbar = () => {
               ? "pending"
               : isActive
               ? "p-5 block secondary_bg text-white duration-300"
-              : "p-5 block primary_color hover:bg-[#ea062b] hover:text-white duration-300"
+              : "p-5 block primary_color hover:bg-[#e9556d] hover:text-white duration-300"
           }
         >
           Community Chat
@@ -149,13 +149,13 @@ const Navbar = () => {
       {user && (
         <li>
           <NavLink
-            to="/dashboard"
+            to="/dashboard/userhome"
             className={({ isActive, isPending }) =>
               isPending
                 ? "pending"
                 : isActive
                 ? "p-5 block secondary_bg text-white duration-300"
-                : "p-5 block primary_color hover:bg-[#ea062b] hover:text-white duration-300"
+                : "p-5 block primary_color hover:bg-[#e9556d] hover:text-white duration-300"
             }
           >
             Dashboard
@@ -201,7 +201,7 @@ const Navbar = () => {
             </div>
             <img
               className="w-10"
-              src={`https://i.ibb.co/QmWg5J0/pngwing-com.png`}
+              src={logo}
               alt=""
             />
             <p className="font-bold">

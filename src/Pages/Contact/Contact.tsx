@@ -3,7 +3,7 @@ import { useRef, FormEvent } from "react";
 import useAuth from "../../hooks/useAuth";
 import emailjs from "@emailjs/browser";
 import Swal from "sweetalert2";
-import contuctimg from "../../assets/steal-data-removebg-preview.png";
+import contactImg from "../../assets/email.jpg";
 import { FaPhoneAlt } from "react-icons/fa";
 import { MdOutlineSchedule } from "react-icons/md";
 import Container from "../../Component/Container/Container";
@@ -60,7 +60,10 @@ const Contact: React.FC = () => {
         <div className="md:flex justify-evenly items-center px-8">
           <div className="">
             <div className="">
-              <div className="md:flex justify-evenly items-center space-y-2">
+              <img className="md:w-96 mb-10" src={contactImg} alt="" />
+
+
+              <div className="md:flex justify-between items-center space-y-2 space-x-2 gap-5">
                 <div className="flex items-center gap-3">
                   <div className="p-5 bg-[#ea062c] inline-block rounded-full">
                     <FaPhoneAlt className="text-3xl  text-white" />
@@ -80,7 +83,6 @@ const Contact: React.FC = () => {
                   </div>
                 </div>
               </div>
-              <img src={contuctimg} alt="" />
             </div>
           </div>
           <div className="relative p-10 shadow-2xl rounded-2xl">
