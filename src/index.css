@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --red: #ea062b;
+  --white: #ffffff;
+  --black: #000000;
+}
+
+.primary_color {
+  color: var(--red);
+}
+
+.secondary_color {
+  color: var(--black);
+}
+
+.primary_bg {
+  background-color: var(--white);
+}
+
+.secondary_bg {
+  background-color: var(--red);
+}
+
+.btnStyle {
+  color: var(--red);
+  background-color: var(--white);
+  border-radius: 0;
+  border: 1px solid var(--red);
+  transition: background-color 0.3s linear;
+  padding: 0 16px;
+}
+
+.btnStyle:hover {
+  color: var(--white);
+  border: 1px solid var(--red);
+  background-color: var(--red);
+}

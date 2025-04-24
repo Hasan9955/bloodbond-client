@@ -1,0 +1,68 @@
+[
+  {
+    "campaignId": "1",
+    "campaignImgUrl": "https://i.ibb.co/NtcrNHJ/cm1.jpg",
+    "campaignTitle": "LifeSaver Blood Donation Drive",
+    "description": "Join us in saving lives through blood donation. Your contribution can make a significant impact on those in need. Blood donation is a noble act that has the power to save lives. Every day, countless individuals require blood transfusions for various medical reasons, including surgeries, accidents, and medical conditions. By donating blood, you become a life-saver, providing an essential resource that can mean the difference between life and death for someone in need. LifeSaver Blood Donation Drive is an initiative aimed at raising awareness about the importance of blood donation and encouraging individuals to participate in this life-saving act. The campaign aims to mobilize communities to donate blood regularly and ensure an adequate supply for hospitals and medical facilities. Through community engagement, education, and outreach, LifeSaver Blood Donation Drive strives to make a positive impact on public health and save lives.",
+    "startDate": "2024-03-01",
+    "endDate": "2024-03-07",
+    "division": "Dhaka",
+    "district": "Dhaka",
+    "subDistrict": "Mirpur"
+  },
+  {
+    "campaignId": "2",
+    "campaignImgUrl": "https://i.ibb.co/LJmQjyt/cm2.jpg",
+    "campaignTitle": "Unity for Blood: Community Campaign",
+    "description": "Let's come together as a community to support our local hospitals. Donate blood and be a part of this unity for a healthier society. Blood is the essence of life, and donating it is one of the most selfless acts one can do. Unity for Blood: Community Campaign aims to promote unity and solidarity among community members while raising awareness about the importance of blood donation. By donating blood, you not only save lives but also strengthen the bonds within your community. This campaign seeks to inspire people from all walks of life to contribute to this noble cause and make a positive impact on the lives of others. Through community engagement events, educational initiatives, and outreach programs, Unity for Blood encourages individuals to become regular blood donors and champions of public health.",
+    "startDate": "2024-02-15",
+    "endDate": "2024-02-20",
+    "division": "Chittagong",
+    "district": "Chittagong",
+    "subDistrict": "Agrabad"
+  },
+  {
+    "campaignId": "3",
+    "campaignImgUrl": "https://i.ibb.co/fn6XrGH/doctor.jpg",
+    "campaignTitle": "Hopeful Hearts Blood Drive",
+    "description": "Spread hope by giving the gift of life. Join our blood donation campaign and be a beacon of light for those in medical need. Hopeful Hearts Blood Drive is a community-driven initiative aimed at spreading hope and saving lives through blood donation. By participating in this campaign, you can make a meaningful difference in the lives of individuals facing medical challenges. Every donation counts, and your generosity can provide hope and healing to those in need. Through community outreach events, educational programs, and blood donation drives, Hopeful Hearts Blood Drive aims to raise awareness about the importance of blood donation and inspire others to join the cause. Together, we can make a positive impact on public health and support our communities in times of need.",
+    "startDate": "2024-04-10",
+    "endDate": "2024-04-15",
+    "division": "Rajshahi",
+    "district": "Rajshahi",
+    "subDistrict": "Boalia"
+  },
+  {
+    "campaignId": "4",
+    "campaignImgUrl": "https://i.ibb.co/LJmQjyt/cm2.jpg",
+    "campaignTitle": "Save a Life: Mega Blood Donation Event",
+    "description": "Participate in our mega blood donation event and be a hero. Your generosity can save multiple lives in our community. Save a Life: Mega Blood Donation Event is an opportunity to make a significant impact on the lives of others. By participating in this event, you can be a hero and save multiple lives through your generous blood donation. Every donation has the potential to make a life-saving difference, and your contribution can help ensure an adequate blood supply for those in need. Through community engagement and outreach efforts, Save a Life aims to raise awareness about the importance of blood donation and inspire others to become regular donors. Together, we can make a difference and save lives in our community.",
+    "startDate": "2024-05-20",
+    "endDate": "2024-05-25",
+    "division": "Khulna",
+    "district": "Khulna",
+    "subDistrict": "Sonnadanga"
+  },
+  {
+    "campaignId": "5",
+    "campaignImgUrl": "https://i.ibb.co/fn6XrGH/doctor.jpg",
+    "campaignTitle": "Youth for Blood: Student-Led Campaign",
+    "description": "Empower the youth to contribute to the well-being of society. This student-led blood donation campaign aims to create a positive impact. Youth for Blood: Student-Led Campaign is an initiative led by young people who are passionate about making a difference in their communities. By empowering the youth to become advocates for blood donation, this campaign aims to create a positive impact on public health and well-being. Through educational programs, awareness campaigns, and community outreach events, Youth for Blood encourages students to become active participants in the blood donation process and advocates for the importance of regular blood donations. Together, we can empower the next generation to make a difference and save lives.",
+    "startDate": "2024-06-15",
+    "endDate": "2024-06-20",
+    "division": "Sylhet",
+    "district": "Sylhet",
+    "subDistrict": "Habiganj"
+  },
+  {
+    "campaignId": "6",
+    "campaignImgUrl": "https://i.ibb.co/NtcrNHJ/cm1.jpg",
+    "campaignTitle": "Heartbeat Heroes: Blood Drive Initiative",
+    "description": "Join us in our mission to be the heartbeat heroes of our community. Every drop counts, and your contribution can make a life-saving difference. Heartbeat Heroes: Blood Drive Initiative is a call to action for community members to come together and save lives through blood donation. By participating in this initiative, you become a heartbeat hero, making a life-saving difference in the lives of others. Every drop of blood counts, and your contribution can help ensure a stable blood supply for hospitals and medical facilities. Through community engagement events, educational initiatives, and outreach programs, Heartbeat Heroes aims to raise awareness about the importance of blood donation and inspire others to become regular donors. Together, we can be the heartbeat heroes our community needs.",
+    "startDate": "2024-12-10",
+    "endDate": "2024-07-15",
+    "division": "Barishal",
+    "district": "Barishal",
+    "subDistrict": "Bakerganj"
+  }
+]
